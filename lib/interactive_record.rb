@@ -3,7 +3,6 @@ require 'active_support/inflector'
 
 class InteractiveRecord
 
-attr_accessor :id
 
   def self.table_name
     self.to_s.downcase.pluralize
@@ -24,7 +23,7 @@ self.column_names.each do |col_name|
   attr_accessor col_name.to_sym
 end
 
-end 
+end
 
 def initialize(options={})
 
